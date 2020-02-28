@@ -12,6 +12,10 @@ class TestCase(unittest.TestCase):
         expected = "failure"
         self.assertNotEqual(expected, task.firstrun())
 
+    def circleTest(self):
+        expected = 78.5
+        self.assertEqual(expected, task.circleArea(5))
+
 
 if __name__ == '__main__':
     unittest.main()
