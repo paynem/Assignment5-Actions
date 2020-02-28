@@ -4,3 +4,9 @@ def firstrun():
 
 def circleArea(r):
     return 3.14 * r*r
+
+
+def listInfo(theList):
+    first = theList[0]
+    last = theList[-1]
+    return first, last
