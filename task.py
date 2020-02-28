@@ -1,5 +1,6 @@
 from datetime import date
 
+
 def firstrun():
     return "success"
 
@@ -12,6 +13,7 @@ def listInfo(theList):
     first = theList[0]
     last = theList[-1]
     return first, last
+
 
 def dateTime(a, b):
     return a - b
