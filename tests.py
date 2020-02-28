@@ -18,7 +18,7 @@ class TestCase(unittest.TestCase):
 
     def test4(self):
         expected = 500
-        self.assertEqual(expected, task.circleArea(6))
+        self.assertNotEqual(expected, task.circleArea(6))
 
 
 if __name__ == '__main__':
