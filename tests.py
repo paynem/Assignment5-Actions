@@ -21,12 +21,16 @@ class TestCase(unittest.TestCase):
         self.assertNotEqual(expected, task.circleArea(6))
 
     def test5(self):
-        theList = [1, 2, 3, 4, 5];
-        self.assertEqual((1, 5), theList);
+        theList = [1, 2, 3, 4, 5]
+        first, last = task.listInfo(theList)
+        self.assertEqual(theList[0], first)
+        self.assertEqual(theList[-1], last)
 
     def test6(self):
-        theList = [1, 2, 3, 4, 5];
-        self.assertNotEqual((5,1), theList);
+        theList = [1, 2, 3, 4, 5]
+        last, first = task.listInfo(theList)
+        self.assertNotEqual(theList[0], first)
+        self.assertNotEqual(theList[-1], last)
 
 
 if __name__ == '__main__':
